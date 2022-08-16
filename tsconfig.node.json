@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "composite": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "paths": {
+      "@/*": ["src/*"],
+      "#/*": ["types/*"],
+      "@build/*": ["build/*"],
+      "@enums/*": ["enums/*"]
+    },
+    "resolveJsonModule": true
+  },
+  "include": [
+    "build/**/*.ts",
+    "build/**/*d.ts",
+    "enums/**/*.ts",
+    "mock/**/*.ts",
+    "package.json",
+    "types/**/*.ts",
+    "types/**/*.d.ts",
+    "vite.config.ts",
+    "build/IIFE.js"
+  ],
+}
